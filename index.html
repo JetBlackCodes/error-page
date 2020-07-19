@@ -1,0 +1,78 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>ЭДО</title>
+    <style type="text/css">
+      body{
+        overflow: hidden;
+      }
+      
+      html, body {
+        position: relative;
+        background: #fff ;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      img{
+        height: 28vw;
+      }
+
+      .left-side{
+        margin-left: 8vw;
+      }
+
+      .right-side{
+        margin-right: 8vw;
+      }
+
+      .title {
+        display: block;
+        font-size: 3rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .description {
+        font-size: 1.3rem;
+      }
+
+      @media (max-width: 1000px) {
+        body {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        }
+
+        img{
+          height: 60vw;
+        }
+
+        .right-side{
+          margin-right: 0;
+        }
+      }
+
+    </style>
+</head>
+
+<body>
+  <div class="left-side">
+    <img src="error.svg" alt="Сервис временно недоступен">
+  </div>
+  <div class="right-side">
+    <h1 class="title">
+      Сервис временно недоступен
+    </h1>
+    <p class="description">
+      Ведутся технические работы
+    </p>
+  </div>
+</body>
+</html>
